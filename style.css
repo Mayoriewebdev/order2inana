@@ -1,0 +1,185 @@
+/* Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .logo{
+margin-bottom:30px;
+}
+
+.logo img{
+width:140px;
+display:block;
+} */
+
+
+
+/* SECTION */
+
+.checkout-section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+}
+
+/* CONTAINER */
+
+.checkout-container{
+  width:100%;
+  max-width:500px;
+}
+
+/* STEPS */
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  margin-right: 90px;
+  margin-top: 30px;
+}
+
+.step {
+  width: 45px;
+  height: 45px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  
+}
+
+.step.active {
+  background: #5a0a66;
+  color: white;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  background: #d9d9d9;
+}
+
+/* TITLE */
+
+/* TITLE IMAGE */
+
+.title{
+  margin-bottom:30px;
+}
+
+.title-img{
+  width:100%;
+  max-width:340px;
+  display:block;
+}
+
+/* FORM */
+
+.checkout-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  margin-bottom:30px;
+}
+
+.checkout-form label{
+  font-size:18px;
+}
+
+.checkout-form input{
+  height:55px;
+  border-radius:35px;
+  border:1px solid #ddd;
+  padding:0 20px;
+  font-size:16px;
+  outline:none;
+  background:#f7f7f7;
+}
+
+.checkout-form input::placeholder{
+  color:#999;
+}
+
+/* PAYMENT */
+
+/* PAYMENT IMAGE */
+.payment-summary{
+  margin-bottom:40px;
+}
+
+.payment-summary img{
+    max-width: 150px;
+}
+
+
+.payment-img{
+  width:100%;
+  max-width:300px;
+  display:block;
+}
+
+.total-title{
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.price{
+  font-size:42px;
+  color:#5a0a66;
+  font-weight:700;
+}
+
+.delivery{
+  font-size:15px;
+  color:#333;
+}
+
+/* PAY BUTTON */
+.pay-btn{
+  display:flex;
+  justify-content:center;
+}
+
+.pay-btn img{
+  width:170px;
+  max-width:100%;
+  transition:0.3s;
+}
+
+.pay-btn img:hover{
+  transform:scale(1.05);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:600px){
+
+  .title-img{
+    max-width:170px;
+  }
+
+  .payment-img{
+    max-width:240px;
+  }
+
+  .step{
+    width:40px;
+    height:40px;
+  }
+
+}
